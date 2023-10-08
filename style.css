@@ -1,0 +1,141 @@
+body {
+  font-family: 'Palanquin Dark', sans-serif;
+  margin: 30px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.logo {
+  height: 200px;
+  display: block;
+  margin: auto;
+  clip-path: inset(10%)
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 auto 50px auto;
+  color: #046574;
+}
+
+span {
+  color: #F2DF74;
+  text-shadow: 2px 2px 3px #545454;
+}
+
+.card {
+  color: #545454;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #545454;
+  height:min-content;
+}
+
+footer>p {
+  margin: 6px;
+}
+
+@media (min-width: 1126px) {
+
+  h2 {
+    margin: 0px;
+  }
+
+.tile-image {
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .card {
+    width: 45%;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+}
+
+@media (max-width: 1125px) and (min-width: 968px) {
+
+  .tile-image {
+    height: 200px;
+    float: left;
+    margin: 10px 10px 10px 0px;
+  }
+
+  .right {
+    clear: left;
+  }
+}
+
+@media (max-width: 967px) and (min-width: 751px) {
+
+  .tile-image {
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+}
+
+/*
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+*/
+
+@media (max-width: 750px) and (min-width: 507px) {
+  
+  .tile-image {
+    height: 200px;
+    float: left;
+    margin: 10px 10px 10px 0px;
+  }
+
+  .right {
+    clear: left;
+  }
+}
+
+@media (max-width: 506px) {
+  
+  h1 {
+    font-size: 4rem;
+  }
+
+  .tile-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+}
